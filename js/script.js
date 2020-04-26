@@ -16,7 +16,7 @@ $(document).ready(function() {
   })(jQuery);
 
   // input text for typing animation 
-  $("#holder").writeText("WEB DESIGNER + FRONT-END DEVELOPER");
+  $("#holder").writeText("PARA JÓVENES Y ADULTOS");
 
   // initialize wow.js
   new WOW().init();
@@ -63,8 +63,8 @@ $(document).ready(function() {
     scrollBar: true,
     responsiveWidth: 400,
     navigation: true,
-    navigationTooltips: ['home', 'about', 'portfolio', 'contact', 'connect'],
-    anchors: ['home', 'about', 'portfolio', 'contact', 'connect'],
+    navigationTooltips: ['home', 'feacture', 'testimony', 'courses','contact', 'connect'],
+    anchors: ['hero', 'feacture', 'testimony','courses', 'contact', 'connect'],
     menu: '#myMenu',
     fitToSection: false,
 
@@ -75,31 +75,25 @@ $(document).ready(function() {
       //using index
       if(index==1){
         /* add opacity to arrow */
-        $('.fa-chevron-down').each(function(){
+        $('.fa-down').each(function(){
           $(this).css('opacity','1')
         });
-        $('.header-links a').each(function(){
+        $('.header-um a').each(function(){
           $(this).css('color','white')
         });
-        $('.header-links').css("background-color","transparent");
+        
       }
 
       else if(index!=1){
-        $('.header-links a').each(function(){
+        $('.header-um a').each(function(){
           $(this).css('color','black')
         });
-        $('.header-links').css('background-color', 'white');
+        
       }
 
       //using index
       if(index == 2){
 
-        /* animate skill bars */
-        $('.skillbar').each(function(){
-          $(this).find('.skillbar-bar').animate({
-            width:jQuery(this).attr('data-percent')
-          },2500);
-        });
       }
     }
   });
@@ -110,18 +104,7 @@ $(document).ready(function() {
     $.fn.fullpage.moveSectionDown();
   });
 
-  // fullpage.js link navigation
-  $(document).on('click', '#skills', function(){
-    $.fn.fullpage.moveTo(2);
-  });
 
-  $(document).on('click', '#projects', function(){
-    $.fn.fullpage.moveTo(3);
-  });
-
-  $(document).on('click', '#contact', function(){
-    $.fn.fullpage.moveTo(4);
-  });
 
   // smooth scrolling
   $(function() {

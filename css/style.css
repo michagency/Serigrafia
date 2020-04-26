@@ -1,7 +1,7 @@
 /* general styles */
 
   body {
-    font-family: 'Raleway', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
   }
 
   ul
@@ -14,29 +14,17 @@
   }
 
   h1 {
-    color: #FF6363;
+    color: black;
     font-weight: bold;
   }
 
   p {
     font-size: 20px;
-    color: #484848;
+    color: black;
   }
 
   .section {
     text-align: center;
-  }
-
-  .skillbar {
-    cursor: pointer;
-  }
-
-  .hide {
-    display: none;
-  }
-
-  .display {
-    display: block;
   }
 
 
@@ -81,13 +69,16 @@
 
   .nav-brand {
     position: fixed;
-    left: 0;
+    left: 1em;
+    top: 1em;
     z-index: 600;
-    padding: 10px;
+    padding: 15px;
+    -webkit-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
   }
 
   .nav-brand img {
-    width: 50px;
+    width: 70px;
   }
 
   .fa-bars {
@@ -110,27 +101,15 @@
     cursor: pointer;
   }
 
-  .header-links {
+  .header-um {
    position: fixed;
-  width: 100%;
-  z-index: 500;
-  }
-
-  .header-links li {
-    color: white;
-    display: inline;
+    z-index: 600;
     float: right;
     padding: 15px;
-    font-size: 16px;
-  }
-
-  .header-links a {
-    color: #757575;
     -webkit-transition: all 0.2s ease-in;
-  }
-
-  .header-links a:hover {
-    color: #FF6363 !important;
+      transition: all 0.2s ease-in;
+      right: 1em;
+      top: 1em;
   }
 
   /* slide out nav menu styles */
@@ -140,24 +119,20 @@
   }
 
   .nav-links {
-    width: 250px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .nav-links ul {
-    margin-top: 15%;
-    text-align: center;
-    padding-top: 10%;
+    position: fixed;
+left: 1em;
+bottom: 1em;
+z-index: 600;
+padding: 15px;
+-webkit-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
   }
 
 
   .nav-links a {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 15px;
     line-height: 2.5;
-    font-weight: bold;
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
@@ -174,11 +149,12 @@
 
   #fp-nav ul li .fp-tooltip {
     color: #5F5F5F !important;
+      
   }
 
   /* Expanding border effect */
 
-  .header-links a::after {
+  .header-um a::after {
     display: block;
       margin: 0 auto;
     margin-top: 5px;
@@ -192,8 +168,8 @@
     transition: width 0.6s, opacity 0.8s;
   }
 
-  .header-links a:hover::after,
-  .header-links a:focus::after {
+  .header-um a:hover::after,
+  .header-um a:focus::after {
     opacity: 1;
     width: 100%;
   }
@@ -208,7 +184,7 @@
   }
 
   .aboutme {
-    background: url("https://s3-us-west-2.amazonaws.com/files.bradengelhardt.com/brad-bg-main.jpg") no-repeat;
+    background-image: linear-gradient(155deg, rgba(107,5,133,0.57) 0%, rgba(30,2,61,0.74) 100%), url(../images/01.jpg);
     background-size: cover;
   }
 
@@ -217,12 +193,22 @@
     font-weight: 100;
     font-size: 17.4px;
   }
+  #projects {
+    background: #1F262C;
+  }
+  #contact {
+   	background-image:linear-gradient(0deg, rgba(69,5,125,0.45) 100%, rgba(69,5,125,0.45) 100%),url(../images/02.jpg);
+      background-size: cover; 
+  }
+#map {
+    background-image: url(../images/Map.jpg);
+}
+
 
   /* bouncing arrow */
 
 
-  .fa-chevron-down {
-    color: #FF6363 !important;
+  .fa-down {
     bottom: 10px;
     margin-left: -30px;
     cursor: pointer;
@@ -244,7 +230,7 @@
       transform: translateY(-30px);
     }
     60% {
-      -webkit-transform: translateY(-15px);
+      -webkit-transform: translateY(-15pºx);
       transform: translateY(-15px);
     }
   }
@@ -281,151 +267,39 @@
     animation: bounce 2s infinite;
   }
 
-  /* about section */
+  /* feacture section */
 
-  /* Skill bars */
-
-.container-skillbar {
-    width:100%;
-    padding-top:30px;
-    padding-right: 2%;
-    padding-left: 2%;
-    height:auto;
-    overflow:none;
-  }
-  .skillbar {
-    position:relative;
-    display:block;
-    margin-bottom:15px;
-    width:100%;
-    background:#efefef;
-    height:30px;
-    border-radius:3px;
-    -moz-border-radius:3px;
-    -webkit-border-radius:3px;
-    -webkit-transition:0.4s linear;
-    -moz-transition:0.4s linear;
-    -ms-transition:0.4s linear;
-    -o-transition:0.4s linear;
-    transition:0.4s linear;
-    -webkit-transition-property:width, background-color;
-    -moz-transition-property:width, background-color;
-    -ms-transition-property:width, background-color;
-    -o-transition-property:width, background-color;
-    transition-property:width, background-color;
-  }
-
-  .skillbar-title {
-    position:absolute;
-    top:0;
-    left:0;
-    width:110px;
-    font-weight:bold;
-    font-size:13px;
-    color:#fff;
-    background:#6adcfa;
-    -webkit-border-top-left-radius:3px;
-    -webkit-border-bottom-left-radius:4px;
-    -moz-border-radius-topleft:3px;
-    -moz-border-radius-bottomleft:3px;
-    border-top-left-radius:3px;
-    border-bottom-left-radius:3px;
-  }
-
-  .skillbar-title span {
-    display:block;
-    background:rgba(0, 0, 0, 0.15);
-    padding:0 20px;
-    height:30px;
-    line-height:30px;
-    -webkit-border-top-left-radius:3px;
-    -webkit-border-bottom-left-radius:3px;
-    -moz-border-radius-topleft:3px;
-    -moz-border-radius-bottomleft:3px;
-    border-top-left-radius:3px;
-    border-bottom-left-radius:3px;
-  }
-
-  .skillbar-bar {
-    height:30px;
-    width:0px;
-    border-radius:3px;
-    -moz-border-radius:3px;
-    -webkit-border-radius:3px;
-  }
-
-  .skill-bar-percent {
-    position:absolute;
-    right:10px;
-    top:0;
-    font-size:11px;
-    height:30px;
-    line-height:30px;
-    color:#ffffff;
-    color:rgba(0, 0, 0, 0.5);
-  }
-
+    /* testimony section */
+#testimony img{
+    width: 50px;
+}
   /* portfolio section */
 
-  .content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-  }
-
-  .content-slide {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-  }
-
-  .content-slide img {
-    width: 70%;
-  }
-
-  .fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent #FF6363 !important;
-    right: 45px !important;
-  }
-
-  .fp-controlArrow.fp-prev {
-    border-color: transparent #FF6363 transparent transparent !important;
-    left: 45px !important;
-  }
 
   #fp-nav ul li a span, .fp-slidesNav ul li a span{
-    background: rgba(0, 0, 0, 0.62) !important;
+    background: rgba(255,255,255,0.6) !important;
+      border: 1px solid #fff;
   }
 
 
-  /* contact us styles */
+  /* contact styles */
 
   .fa-paper-plane {
     color: #484848;
   }
 
-  /* paper plane shake on hover */
-
-  .plane-animated {
-    animation-duration: 6s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-play-state: paused;
+  .content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 70%;
+      bottom: -13%;
+      background: #FFFFFF;
+      border-radius: 12px 12px 0px 0px;
+      padding: 5em 3em 8em;
+      align-items: baseline;
+      display: grid;
+      position: relative;
   }
-
-  .fa-paper-plane:hover {
-  /* Toggle our animation play state to running when we are hovering over our sticker */
-  animation-play-state: running;
-}
-
-    @keyframes shake {
-    0%, 100% {transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-    20%, 40%, 60%, 80% {transform: translateX(10px);}
-  }
-    .shake {
-      animation-name: shake;
-    }
 
 
   /* input field styles */
@@ -436,7 +310,7 @@
 
 
   .form-control {
-    border: 2px solid rgba(0, 0, 0, 0.27);
+    border: 2px solid rgba(, 0, 0, 0.27);
     width: 100%;
     max-width: 100%;
     height: 3em;
@@ -463,19 +337,18 @@
     outline: none;
     padding: 12px;
     min-width: 200px;
-    border-radius: 2px;
-    border: 2px solid #FF6363;
     text-align: center;
     font-size: 1em;
-    color: #FF6363;
-    background-color: white;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    background: #BD10E0;
+    border-radius: 30.5px;
   }
 
   #submit:hover {
-    background-color: #FF6363;
+    background-color: #ED1E79;
     color: white;
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -520,7 +393,7 @@
       display: block !important;
     }
 
-    .header-links {
+    .header-um {
       display: none;
     }   
   }
@@ -677,4 +550,7 @@
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+}
+#Academia {
+fill: rgb(0, 0, 0);
 }
