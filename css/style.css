@@ -188,12 +188,14 @@ p {
     font-weight: 100;
     font-size: 17.4px;
 }
+
 #hero h1 {
     color: white;
     font-weight: 900;
     font-size: 88px;
     margin: 0px;
 }
+
 #projects {
     background: #1F262C;
 }
@@ -294,26 +296,104 @@ p {
 }
 
 /* feacture section */
-.feacture{
+.feacture {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
-.feacture-box{
+
+.feacture-box {
     width: 28%;
     display: inline-block;
     padding: 1em;
 }
+
 .feacture-box img {
     height: 70px;
 }
 
 /* testimony section */
-#testimony{
-    background:#1F262C;
+#testimony {
+    background: #1F262C;
+    display: grid;
 }
+
 #testimony img {
-    width: 50px;
+    width: 350px;
+    border-radius: 25px;
+    border: 0px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+nav {
+    -webkit-backface-visibility: hidden;
+    top: 18em;
+    margin: auto;
+    width: 100px;
+    float: right;
+    position: absolute;
+    padding: 15px;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    right: 6em;
+}
+
+nav li {
+    height: 20px;
+    margin: 20px 0px;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #fff;
+}
+.persons object{
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+.persons h2 {
+    width: 400px;
+    position: absolute;
+    right: 35%;
+    top: 20%;
+    color: white;
+    text-align: left;
+    font-weight: 200;
+    font-size: 25px;
+}
+.persons h1 {
+    color: white;
+    font-weight: bold;
+    width: auto;
+    position: absolute;
+    left: 35%;
+    bottom: 20%;
+    color: white;
+    text-align: left;
+    font-size: 40px;
+}
+
+.persons h1 span {
+    color: white;
+    font-weight: 200;
 }
 
 /* portfolio section */
@@ -362,7 +442,7 @@ p {
     padding: 1em;
     margin: .5em 0 1em 0;
     font-weight: bold;
-    border-radius:12px;
+    border-radius: 12px;
 }
 
 textarea {
