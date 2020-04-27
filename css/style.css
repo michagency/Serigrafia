@@ -160,9 +160,13 @@ p {
 
 #fp-nav ul li .fp-tooltip {
     color: #5F5F5F !important;
-
 }
-
+.logo:hover{
+  filter: invert(90%);
+}
+.logo:active{
+    filter: custom()
+}
 /* Expanding border effect */
 
 .header-um a::after {
@@ -468,13 +472,12 @@ top: 25%;
 width: 30%;
     text-align: left;
 }
-}
+
 /* contact section */
 #contact {
     background-image: linear-gradient(0deg, rgba(69, 5, 125, 0.45) 100%, rgba(69, 5, 125, 0.45) 100%), url(../images/02.jpg);
     background-size: cover;
 }
-
 
 .content {
     margin-left: auto;
@@ -506,7 +509,7 @@ width: 30%;
     padding: 1em;
     margin: .5em 0 1em 0;
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 textarea {

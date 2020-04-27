@@ -86,7 +86,7 @@ $(document).ready(function() {
 
       else if(index!=1){
         $('.header-um a').each(function(){
-          $(this).css('color','black')
+          $(this).css('color','white')
         });
         
       }
