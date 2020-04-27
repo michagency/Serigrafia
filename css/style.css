@@ -591,18 +591,12 @@ button:hover {
 /* Modal */
 
 .modal {
-    background-color: #484848;
-    background-size: cover;
- position: fixed;
-  overflow: auto;
-      width: 98vw;
-    height: 97vh;
-    top: 10px; 
-    left: 10px;
-  right: 10px;
-  bottom: 10px;
-    text-align: center;
-    z-index: 11;
+position: fixed;
+overflow: auto;
+width: 100%;
+top: 18%;
+text-align: center;
+z-index: 11;
 }
 
 .modal h1 {
@@ -637,11 +631,11 @@ button:hover {
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
     z-index: 10;
 }
 
@@ -651,9 +645,9 @@ button:hover {
 
 
 
-/* smaller resolution styles */
+/* tablet styles */
 
-@media (min-width: 100px) and (max-width: 500px) {
+@media (min-width: 100px) and (max-width: 1024px) {
 
     .fa-bars {
         display: block !important;
