@@ -556,7 +556,11 @@ label a {
     text-emphasis: none;
     color: black;
 }
-
+button a{
+    color: white;
+    text-decoration: none;
+    text-emphasis: none;
+}
 button {
     outline: none;
     padding: 12px;
@@ -602,7 +606,6 @@ button:hover {
 }
 
 #modal .fa-times {
-    position: absolute;
     z-index: 600;
     padding: 15px;
     -webkit-transition: all 0.2s ease-in;
