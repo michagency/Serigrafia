@@ -1,5 +1,7 @@
 /* general styles */
-
+body {
+    position: relative;
+}
 * {
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -588,24 +590,33 @@ button:hover {
 
 /* Modal */
 
-#modal {
+.modal {
     background-color: #484848;
-    text-align: center;
     background-size: cover;
+ position: fixed;
+  overflow: auto;
+      width: 98vw;
+    height: 97vh;
+    top: 10px; 
+    left: 10px;
+  right: 10px;
+  bottom: 10px;
+    text-align: center;
+    z-index: 11;
 }
 
-#modal h1 {
+.modal h1 {
     font-size: 6em;
     font-weight: 900;
 }
 
-#modal p {
+.modal p {
     margin: 0px;
     text-transform: uppercase;
     font-size: 1em;
 }
 
-#modal .fa-times {
+.modal .fa-times {
     z-index: 600;
     padding: 15px;
     -webkit-transition: all 0.2s ease-in;
@@ -623,6 +634,23 @@ button:hover {
     -moz-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.main-content {
+  visibility:hidden;
+}
+
+
+
 /* smaller resolution styles */
 
 @media (min-width: 100px) and (max-width: 500px) {

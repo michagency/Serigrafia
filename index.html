@@ -150,7 +150,7 @@
                         </div>
                         <br>
                         <div class="wow fadeInUp" data-wow-delay="1s">
-                            <button type="submit" name="submit"><a href="#modal">Yo quiero ir</a></button>
+                            <button class="over_click" type="submit" name="submit">Yo quiero ir</button>
                         </div>
                     </form>
                     <br>
@@ -172,24 +172,28 @@
             </div>
         </div>
         <!-- end section -->
-        <!-- begin section -->
-
-        <div id="modal" data-anchor="modal">
-            <a class="close" href="#"><i class="fas fa-times"></i></a>
-            <div class="content animated fadeInUp" data-wow-delay="1s">
-                <img src="images/03.svg">
-                <br>
-                 <h1>¡GRACIAS!</h1>
-                <p>Recibiras mas informacion</p>
-                <p>en breve a tu bandeja de correo</p>
-            </div>
-        </div>
-        <!-- end section -->
-
 
     </div>
     <!-- end fullpage -->
 
+    <!-- begin modal -->
+
+    <div class="main-content" id="modal" data-anchor="modal">
+        <div class="overlay"></div>
+        <div class="modal">
+            <div class="modal-content">
+                <a class="close" href="#"><i class="fas fa-times"></i></a>
+                <div class="content animated fadeInUp" data-wow-delay="1s">
+                    <img src="images/03.svg">
+                    <br>
+                    <h1>¡GRACIAS!</h1>
+                    <p>Recibiras mas informacion</p>
+                    <p>en breve a tu bandeja de correo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
 
     <!-- Begin script's -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

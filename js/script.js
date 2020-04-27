@@ -121,7 +121,15 @@ $(document).ready(function() {
       }
     });
   });
+      // open modal
+$('.over_click').on('click', function(){
+  $('.main-content').css('visibility', 'visible');
+});
 
+$('.main-content').on('click', function(){
+  $(this).css('visibility', 'hidden');
+});
+    
   //ajax form
   $(function() {
 
