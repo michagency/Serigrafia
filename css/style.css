@@ -446,7 +446,7 @@ nav a.active {
 
 /* Connect Section */
 #map {
-    background-image: url(../images/Map.jpg);
+    background-image: linear-gradient(0deg, rgba(31, 38, 44, 0.64) 100%, rgba(31, 38, 44, 0.64) 100%), url(../images/Map.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -478,7 +478,10 @@ width: 30%;
     background-image: linear-gradient(0deg, rgba(69, 5, 125, 0.45) 100%, rgba(69, 5, 125, 0.45) 100%), url(../images/02.jpg);
     background-size: cover;
 }
-
+#contact h1 {
+    font-size: 3em;
+    font-weight: 900;
+}
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -491,17 +494,15 @@ width: 30%;
     display: grid;
     position: relative;
 }
-
+.contact-form {
+    padding: 0px 25px 0px 0px;
+    width: 100%;
+}
 
 /* input field styles */
 
-.contact-form {
-    padding: 0px 25px 0px 0px;
-}
-
-
 .form-control {
-    border: 2px solid rgba(, 0, 0, 0.27);
+    border: 0px;
     width: 100%;
     max-width: 100%;
     height: 1em;
@@ -509,11 +510,9 @@ width: 30%;
     padding: 1em;
     margin: .5em 0 1em 0;
     font-weight: bold;
-    border-radius: 20px;
-}
-
-textarea {
-    min-height: 4em;
+    border-radius: 30px;
+    background-color: #D8D8D8;
+    
 }
 
 label {
@@ -521,10 +520,18 @@ label {
     max-width: 100%;
     margin-bottom: 5px;
     font-size: 18px;
-    text-transform: uppercase;
     font-weight: 500;
 }
-
+.radio label{
+    font-size: 11px;
+    color: black;
+}
+label a {
+    font-weight: 700;
+    text-decoration: none;
+    text-emphasis: none;
+    color: black;
+}
 button {
     outline: none;
     padding: 12px;
