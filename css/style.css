@@ -205,19 +205,6 @@ p {
     margin: 0px;
 }
 
-#projects {
-    background: #1F262C;
-}
-
-#contact {
-    background-image: linear-gradient(0deg, rgba(69, 5, 125, 0.45) 100%, rgba(69, 5, 125, 0.45) 100%), url(../images/02.jpg);
-    background-size: cover;
-}
-
-#map {
-    background-image: url(../images/Map.jpg);
-}
-
 
 /* bouncing arrow */
 
@@ -305,6 +292,7 @@ p {
 }
 
 /* feacture section */
+
 .feacture {
     display: flex;
     justify-content: center;
@@ -452,11 +440,41 @@ nav a.active {
     right: 40%;
 }
 
-/* contact styles */
-
-.fa-paper-plane {
-    color: #484848;
+/* Connect Section */
+#map {
+    background-image: url(../images/Map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+#map h1 {
+    color: white;
+    padding: 0px;
+}
+h3 {
+    color: #BD10E0;
+    padding: 0px;
+} 
+#map p{
+    color: white;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding: 0px;
+}
+.connect {
+    position: absolute;
+left: 10%;
+top: 25%;
+width: 30%;
+    text-align: left;
+}
+}
+/* contact section */
+#contact {
+    background-image: linear-gradient(0deg, rgba(69, 5, 125, 0.45) 100%, rgba(69, 5, 125, 0.45) 100%), url(../images/02.jpg);
+    background-size: cover;
+}
+
 
 .content {
     margin-left: auto;
