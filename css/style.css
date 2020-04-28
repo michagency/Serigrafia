@@ -248,12 +248,12 @@ header {
 }
 
 /* testimony section */
-#testimony {
+.testimony {
     background: #1F262C;
     display: grid;
 }
 
-#testimony img {
+.testimony img {
     width: 350px;
     border-radius: 25px;
     border: 0px;
@@ -425,12 +425,12 @@ h3 {
 }
 
 /* contact section */
-#contact {
+.contact {
     background-image: linear-gradient(0deg, rgba(69, 5, 125, 0.45) 100%, rgba(69, 5, 125, 0.45) 100%), url(../images/02.jpg);
     background-size: cover;
 }
 
-#contact h1 {
+.contact h1 {
     font-size: 3em;
     font-weight: 900;
 }

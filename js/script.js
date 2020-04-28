@@ -63,7 +63,7 @@ $(document).ready(function () {
         scrollBar: true,
         responsiveWidth: 400,
         navigation: true,
-        anchors: ['hero', 'feacture', 'testimony', 'courses', 'contact', 'connect'],
+        anchors: ['home','feacture','testimony', 'serigrafia','contact', 'connect'] ,
         menu: '#myMenu',
         fitToSection: false,
 
