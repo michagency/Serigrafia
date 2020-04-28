@@ -59,7 +59,7 @@ p {
 
 /*  Header styles */
 header {
-     -webkit-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
 
@@ -83,6 +83,7 @@ header {
     right: 1em;
     top: 1em;
 }
+
 .nav-links {
     display: flex;
     flex-direction: column-reverse;
@@ -127,9 +128,7 @@ header {
     transition: all 0.2s ease-in-out;
 }
 
-.light {
-    
-}
+.light {}
 
 /* Expanding border effect */
 
@@ -581,6 +580,7 @@ button:hover {
     font-size: 5em;
     color: rgba(250, 250, 250, 0.6);
 }
+
 .fa-times:hover {
     opacity: 0.5;
     -webkit-transition: all 0.2s ease-in-out;
