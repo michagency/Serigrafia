@@ -75,27 +75,38 @@ $(document).ready(function() {
       //using index
       if(index==1){
         /* add opacity to arrow */
-        $('.fa-down').each(function(){
-          $(this).css('opacity','1')
+           $('header').each(function(){
+          $(this).removeClass('dark')
         });
-        $('.header-um a').each(function(){
-          $(this).css('color','white')
-        });
-        
       }
 
-      else if(index!=1){
-        $('.header-um a').each(function(){
-          $(this).css('color','white')
-        });
+      else if(index == 1){
         
       }
 
       //using index
       if(index == 2){
-
+           $('header').each(function(){
+          $(this).addClass('dark')
+        });
+      }
+        if(index == 3){
+           $('header').each(function(){
+          $(this).removeClass('dark')
+        });
+      }
+      if(index == 4){
+           $('header').each(function(){
+          $(this).addClass('dark')
+        });
+      }
+         if(index == 5){
+           $('header').each(function(){
+          $(this).removeClass('dark')
+        });
       }
     }
+  
   });
  
 
