@@ -123,28 +123,6 @@ header {
 
 .light {}
 
-/* Expanding border effect */
-
-.um a::after {
-    display: fixed;
-    margin: 0 auto;
-    margin-top: 5px;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    content: '';
-    opacity: 0;
-    -webkit-transition: width 0.6s, opacity 0.8s;
-    -moz-transition: width 0.6s, opacity 0.8s;
-    transition: width 0.6s, opacity 0.8s;
-}
-
-.um a:hover::after,
-.um a:focus::after {
-    opacity: 1;
-    width: 100%;
-}
-
 /* hero section */
 
 #hero {

@@ -126,8 +126,7 @@ $(document).ready(function () {
     $(document).on('click', '#moveDown', function () {
         $.fn.fullpage.moveSectionDown();
     });
-
-
+    
 
     // smooth scrolling
     $(function () {
