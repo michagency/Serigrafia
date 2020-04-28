@@ -53,8 +53,7 @@ p {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    background: rgba(255, 255, 255, 0.6) !important;
-    border: 1px solid #fff;
+    background: #fff!important;
 }
 
 /*  Header styles */
@@ -63,7 +62,7 @@ header {
     transition: all 0.2s ease-in;
 }
 
-.nav-brand {
+.academia {
     position: fixed;
     left: 1em;
     top: 1em;
@@ -73,7 +72,7 @@ header {
     transition: all 0.2s ease-in;
 }
 
-.header-um {
+.um {
     position: fixed;
     z-index: 600;
     float: right;
@@ -84,7 +83,7 @@ header {
     top: 1em;
 }
 
-.nav-links {
+.social {
     display: flex;
     flex-direction: column-reverse;
     position: fixed;
@@ -97,7 +96,7 @@ header {
 }
 
 
-.nav-links a {
+.social a {
     color: #FFFFFF;
     font-size: 25px;
     line-height: 1.5;
@@ -106,7 +105,7 @@ header {
     margin-right: auto;
 }
 
-.nav-links a:hover {
+.social a:hover {
     opacity: 0.5;
     -webkit-transition: all 0.6s ease-in-out;
     -o-transition: all 0.6s ease-in-out;
