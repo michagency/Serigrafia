@@ -74,7 +74,7 @@ $(document).ready(function () {
             //using index
             if (index == 1) {
                 /* add opacity to arrow */
-                $('header img, .social a[href*=#]').each(function () {
+                $('header img, .social').each(function () {
                     $(this).removeClass('dark')
                 });
                 $('#fp-nav').each(function () {
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
             //using index
             if (index == 2) {
-                $('header img, .social a[href*=#]').each(function () {
+                $('header img, .social').each(function () {
                     $(this).addClass('dark')
                 });
                 $('#fp-nav').each(function () {
@@ -94,7 +94,7 @@ $(document).ready(function () {
                 });
             }
             if (index == 3) {
-                $('header img, .social a[href*=#]').each(function () {
+                $('header img, .social').each(function () {
                     $(this).removeClass('dark')
                 });
                 $('#fp-nav').each(function () {
@@ -102,7 +102,7 @@ $(document).ready(function () {
                 });
             }
             if (index == 4) {
-                $('header img, .social a[href*=#]').each(function () {
+                $('header img, .social').each(function () {
                     $(this).addClass('dark')
                 });
                 $('#fp-nav').each(function () {
@@ -110,7 +110,7 @@ $(document).ready(function () {
                 });
             }
             if (index == 5) {
-                $('header img, .social a[href*=#]').each(function () {
+                $('header img, .social').each(function () {
                     $(this).removeClass('dark')
                 });
                 $('#fp-nav').each(function () {
