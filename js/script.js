@@ -145,10 +145,10 @@ $(document).ready(function () {
     });
     // open modal
     $('.over_click').on('click', function () {
-        $('.main-content').css('visibility', 'visible');
+        $('.modal').css('visibility', 'visible');
     });
 
-    $('.main-content').on('click', function () {
+    $('.modal').on('click', function () {
         $(this).css('visibility', 'hidden');
     });
 

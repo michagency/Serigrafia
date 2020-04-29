@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <title>Landing Serigrafía</title>
     <meta name="description" content="Landing page Serigrafía">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="serigrafia, screen printing, printing">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="css/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
     <link rel='stylesheet' href="css/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
 
 </head>
 
@@ -21,11 +22,11 @@
             <img src="images/Academia.svg">
         </div>
         <div class="um">
-            <img src="images/UM.svg">
+            <a href="http://www.um.edu.mx"><img src="images/UM.svg"></a>
         </div>
         <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/academia.artcom/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/academiaartcom/"><i class="fab fa-instagram"></i></a>
         </div>
         <i id="moveDown" class="fa-down bounce"><img src="images/Shape.svg" alt="svg"></i>
     </header>
@@ -43,39 +44,39 @@
                 <h1>Taller de</h1>
                 <h1>Serigrafía</h1>
                 <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-                <br><button><a href="#contact">YO VOY</a></button>
+                <br><a href="#contact"><button>YO VOY</button></a>
             </div>
         </div>
         <!-- end section -->
 
         <!-- begin section -->
 
-        <div class="section feacture" data-anchor="feature">
-<div class="animated fadeInDown" data-wow-delay="0.2s">
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="feacture-box">
-                    <img src="images/Shirt%202.svg">
-                    <h1>EMPRENDE</h1>
-                    <p>Al salir del curso, contara con todos los consejos, trucos y secretos para ir a casa y abrir las puertas de su propio negocio</p>
-                </div>
-                <div class="feacture-box">
-                    <img src="images/Time.svg">
-                    <h1>TIEMPO</h1>
-                    <p>Nuestro taller es muy practico. 2 x 5, dos horas por cinco días siendo creativos y ensuciadose las manos.</p>
-                </div>
-                <div class="feacture-box">
-                    <img src="images/Money.svg">
-                    <h1>DINERO</h1>
-                    <p>Un curso con un precio accecible, para llegar a ser experto en serigrafía y lo mejor, los materiales están incluidos.</p>
+        <div class="section" data-anchor="feature">
+            <div class="animated fadeInDown" data-wow-delay="0.2s">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="feacture-box">
+                        <img src="images/Shirt%202.svg">
+                        <h1>EMPRENDE</h1>
+                        <p>Al salir del curso, contara con todos los consejos, trucos y secretos para ir a casa y abrir las puertas de su propio negocio</p>
+                    </div>
+                    <div class="feacture-box">
+                        <img src="images/Time.svg">
+                        <h1>TIEMPO</h1>
+                        <p>Nuestro taller es muy practico. 2 x 5, dos horas por cinco días siendo creativos y ensuciadose las manos.</p>
+                    </div>
+                    <div class="feacture-box">
+                        <img src="images/Money.svg">
+                        <h1>DINERO</h1>
+                        <p>Un curso con un precio accecible, para llegar a ser experto en serigrafía y lo mejor, los materiales están incluidos.</p>
+                    </div>
                 </div>
             </div>
         </div>
-</div>
         <!-- end section -->
         <!-- begin section -->
 
         <div class="section testimony" data-anchor="testimony">
-            <nav id="persons">
+            <nav class="fp-slidesNav fp-bottom" id="persons">
                 <ul>
                     <li><a href="#one">one</a></li>
                     <li><a href="#secondary">two</a></li>
@@ -84,9 +85,9 @@
                     <li><a href="#fifth">five</a></li>
                 </ul>
             </nav>
-            <div class="persons" id="one">
+            <div class="slide persons" id="one">
                 <object type="image/svg+xml" data="../Serigrafia/images/comillas.svg"></object>
-                <img src="images/Lorena.jpg">
+                <div class="face"></div>
                 <h2>Cuando salí de ese curso, tuve las habilidades y la información que necesita para ir a casa y comenzar con mi propio negocio de ropa impresa.</h2>
                 <h1>Lorena <span> Díaz</span></h1>
             </div>
@@ -96,23 +97,23 @@
         <!-- begin section -->
 
         <div class="section" id="courses" data-anchor="serigrafia">
-<div class="animated fadeInDown" data-wow-delay="0.2s">
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="courses" id="course1">
-                    <img src="images/03.jpg">
-                    <object type="image/svg+xml" data="../Serigrafia/images/01.svg"></object>
-                    <h1>SERIGRAFÍA 1</h1>
-                    <p>Aprenderá a imprimir, solucionar problemas y experimentar con el color, registro y técnicas de impresión, así como el proceso de curado de la tinta. ¡Saldrá con sus propias camisetas y bolsos a medida!</p>
-                </div>
-                <div class="courses" id="course2">
-                    <img src="images/04.jpg">
-                    <object type="image/svg+xml" data="../Serigrafia/images/02.svg"></object>
-                    <h1>SERIGRAFÍA 2</h1>
-                    <p>El curso es para cualquier persona que imagine convertirse en una impresora de pantalla de prendas profesional y rentable. Esta clase es su curso completo de inicio de negocios.</p>
+            <div class="animated fadeInDown" data-wow-delay="0.2s">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="courses" id="course1">
+                        <div class="img"></div>
+                        <h1>SERIGRAFÍA 1</h1>
+                        <p>Aprenderá a imprimir, solucionar problemas y experimentar con el color, registro y técnicas de impresión, así como el proceso de curado de la tinta. ¡Saldrá con sus propias camisetas y bolsos a medida!</p>
+                        <img src="images/01.svg">
+                    </div>
+                    <div class="courses" id="course2">
+                        <div class="img"></div>
+                        <h1>SERIGRAFÍA 2</h1>
+                        <p>El curso es para cualquier persona que imagine convertirse en una impresora de pantalla de prendas profesional y rentable. Esta clase es su curso completo de inicio de negocios.</p>
+                        <img src="images/02.svg">
+                    </div>
                 </div>
             </div>
         </div>
-</div>
         <!-- end section -->
 
         <!-- begin section -->
@@ -120,7 +121,7 @@
         <div class="section contact" data-anchor="contact">
             <div class="content wow fadeInDown" data-wow-delay="0.2s">
                 <h1>YO VOY</h1>
-                <br>
+                <p>Dejanos tus datos si estas interesado</p>
                 <div class="contact-form">
 
 
@@ -145,7 +146,7 @@
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                         </div>
                         <div class="wow fadeIn radio" data-wow-delay="1s">
-                            <input type="radio" id="terms" name="terms" value="yes">
+                            <input type="checkbox" id="terms" name="terms" value="yes">
                             <label for="terms">He leído y acepto los <a href="#"><span>Términos y Condiciones</span></a></label>
                         </div>
                         <br>
@@ -178,9 +179,8 @@
     <!-- begin modal -->
 
     <div class="main-content" id="modal" data-anchor="popup">
-        <div class="overlay"></div>
         <div class="modal">
-            <div class="modal-content">
+            <div class="overlay">
                 <a class="close" href="#"><i class="fas fa-times"></i></a>
                 <div class="content animated fadeInUp" data-wow-delay="1s">
                     <img src="images/03.svg">
@@ -198,7 +198,7 @@
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
-    <script src="../Serigrafia/js/script.js"></script>
+    <script src="../Serigrafia/js/script.min.js"></script>
     <script src="https://kit.fontawesome.com/22aaa58177.js" crossorigin="anonymous"></script>
     <!-- End script's -->
 
