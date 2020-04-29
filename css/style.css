@@ -58,8 +58,11 @@ p {
 
 /*  Header styles */
 header {
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .academia {
@@ -154,8 +157,11 @@ header {
     bottom: 1em;
     z-index: 600;
     padding: 15px;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -305,8 +311,11 @@ nav {
     width: 20px;
     float: right;
     position: absolute;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     right: 8em;
 }
 
@@ -439,7 +448,9 @@ h3 {
     font-size: 3em;
     font-weight: 900;
 }
-
+.contact p{
+    font-weight: 300;
+}
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -531,7 +542,7 @@ button:hover {
     overflow: auto;
     width: 100%;
     height: 100%;
-    top: 2%;
+    top: 0%;
     text-align: center;
     z-index: 700;
 }
@@ -550,10 +561,13 @@ button:hover {
 .fa-times {
     float: right;
     padding: .5em;
-    z-index: 1000;
+    z-index: 600;
     cursor: pointer;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     font-size: 4em;
     color: orangered;
 }
@@ -574,7 +588,7 @@ button:hover {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 700;
+    z-index: 610;
 }
 
 .main-content {
@@ -602,7 +616,7 @@ button:hover {
     }
 
     .face {
-        left: -5%;
+        left: 10%;
 
     }
 
@@ -619,9 +633,36 @@ button:hover {
 
 /* end tablet styles */
 
+@media screen and (max-width: 1024px) {
+
+    .persons h2 {
+        width: 40%;
+        right: 10%;
+    }
+
+    .persons h1 {
+        width: 200px;
+        bottom: 16%;
+        left: 50%;
+    }
+
+    .persons object {
+        left: 50%;
+    }
+}
+
 /* tablet section styles */
 
 @media screen and (max-width: 849px) {
+    .face {
+        left: 3%;
+    }
+
+    .persons h2 {
+        width: 30%;
+        right: 18%;
+    }
+
     #course1 .img {
         left: 0%;
     }
@@ -643,6 +684,14 @@ button:hover {
 
 /* mobile styles courses */
 @media screen and (max-width: 685px) {
+    * {
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
     #course1 h1 {
         color: white;
         left: 8%;
@@ -656,8 +705,8 @@ button:hover {
 
     #course1 .img {
         top: 12%;
-        background-image: linear-gradient(180deg, rgba(107,5,133,0.63) 0%, rgba(77,40,192,0.85) 98%), url(../images/03.jpg);
-       
+        background-image: linear-gradient(180deg, rgba(107, 5, 133, 0.63) 0%, rgba(77, 40, 192, 0.85) 98%), url(../images/03.jpg);
+
     }
 
     #course2 h1 {
@@ -673,9 +722,12 @@ button:hover {
 
     #course2 .img {
         top: 60%;
-        background-image: linear-gradient(180deg, rgba(107,5,133,0.63) 0%, rgba(77,40,192,0.85) 98%), url(../images/04.jpg);
+        background-image: linear-gradient(180deg, rgba(107, 5, 133, 0.63) 0%, rgba(77, 40, 192, 0.85) 98%), url(../images/04.jpg);
     }
 
+    .face {
+        left: -5%;
+    }
 }
 
 /* end mobile styles courses*/
@@ -683,6 +735,14 @@ button:hover {
 /* mobile styles */
 
 @media screen and (max-width: 767px) {
+    * {
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
     .feacture-box img {
         height: 4em;
     }
@@ -725,15 +785,15 @@ button:hover {
     }
 
     .persons h2 {
-
-        right: 19%;
+        width: 40%;
+        right: 10%;
     }
 
     .persons h1 {
-
         width: 200px;
         bottom: 16%;
     }
+
 
     .persons object {
         top: 12%;
@@ -750,7 +810,7 @@ button:hover {
     }
 
     .modal {
-        top: 5%;
+        top: 0%;
 
     }
 
