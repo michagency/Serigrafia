@@ -428,6 +428,8 @@ h3 {
     width: 100%;
     display: inline-block;
     padding: 0px;
+    text-decoration: none;
+    text-decoration-color: white;
 }
 
 .connect {
@@ -447,10 +449,14 @@ h3 {
 .contact h1 {
     font-size: 3em;
     font-weight: 900;
+    margin: 0px;
 }
-.contact p{
+
+.contact p {
     font-weight: 300;
+    margin: 0px;
 }
+
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -461,10 +467,12 @@ h3 {
     padding: 5em 3em 8em;
     align-items: baseline;
     position: relative;
+    z-index: 615;
 }
 
 .contact-form {
-    padding: 0px 25px 0px 0px;
+    margin-bottom: 3em;
+    padding-bottom: 20px;
     width: 100%;
 }
 
@@ -709,6 +717,12 @@ button:hover {
 
     }
 
+    #course1 img {
+        right: 0%;
+        position: relative;
+
+    }
+
     #course2 h1 {
         color: white;
         right: 8%;
@@ -723,6 +737,12 @@ button:hover {
     #course2 .img {
         top: 60%;
         background-image: linear-gradient(180deg, rgba(107, 5, 133, 0.63) 0%, rgba(77, 40, 192, 0.85) 98%), url(../images/04.jpg);
+    }
+
+    #course2 img {
+        left: -40%;
+        position: relative;
+
     }
 
     .face {
@@ -821,13 +841,14 @@ button:hover {
     }
 
     .contact .content {
-        padding: 5em 3em 1em;
+        padding: 1em 3em 1em;
         left: -12%;
+          z-index: 609;
     }
 
 
     .modal .content {
-        padding: 5em 3em 13em;
+        padding: 1m 3em 13em;
         left: -12%;
         z-index: 610;
 
@@ -836,8 +857,35 @@ button:hover {
     .modal h1 {
         font-size: 3em;
     }
+    .academia img {
+        width: auto;
+        height: 55px;
+    }
 
 }
+
+@media screen and (max-width: 375px) {
+    .umimg {
+        content: url("../images/UM-Movil.svg");
+    }
+
+    #hero img {
+        width: 125px;
+        height: auto;
+    }
+    .academia img {
+        width: auto;
+        height: 45px;
+    }
+    .contact .content {
+    padding: 1em 3em 1em;
+}
+     .contact-form {
+        margin-bottom: 0px;
+
+    }
+}
+
 
 /* loading screen animation */
 

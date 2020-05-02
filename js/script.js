@@ -61,7 +61,7 @@ $(document).ready(function () {
 
     $('#fullpage').fullpage({
         scrollBar: true,
-        responsiveWidth: 400,
+        responsiveWidth: 375,
         navigation: true,
         anchors: ['home','feacture','testimony', 'serigrafia','contact', 'connect'] ,
         menu: '#myMenu',
