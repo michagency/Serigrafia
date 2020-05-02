@@ -843,7 +843,6 @@ button:hover {
     .contact .content {
         padding: 1em 3em 1em;
         left: -12%;
-          z-index: 609;
     }
 
 
@@ -857,6 +856,7 @@ button:hover {
     .modal h1 {
         font-size: 3em;
     }
+
     .academia img {
         width: auto;
         height: 55px;
@@ -873,14 +873,17 @@ button:hover {
         width: 125px;
         height: auto;
     }
+
     .academia img {
         width: auto;
         height: 45px;
     }
+
     .contact .content {
-    padding: 1em 3em 1em;
-}
-     .contact-form {
+        padding: 1em 3em 1em;
+    }
+
+    .contact-form {
         margin-bottom: 0px;
 
     }
