@@ -57,13 +57,7 @@ p {
 }
 
 /*  Header styles */
-header {
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
+header {}
 
 .academia {
     position: fixed;
@@ -117,11 +111,7 @@ header {
 
 .dark {
     filter: invert(90%) grayscale(1);
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+
 }
 
 .light {}
@@ -873,6 +863,23 @@ button:hover {
         height: auto;
     }
 
+    .feacture-box img {
+        height: 3em;
+    }
+
+    .feacture-box {
+        width: 60%;
+    }
+
+    .feacture-box h1 {
+        margin: .2em;
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
     .academia img {
         width: auto;
         height: 45px;
@@ -885,6 +892,21 @@ button:hover {
     .contact-form {
         margin-bottom: 0px;
 
+    }
+    .modal .content {
+
+    padding: 5em 3em 8em;
+}
+
+    .persons h1 {
+        width: 1em;
+        bottom: 8%;
+    }
+
+    .persons h2 {
+        width: 35%;
+        right: 11%;
+        font-size: 1.2em;
     }
 }
 

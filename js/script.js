@@ -29,19 +29,19 @@ $(document).ready(function () {
             }, 200);
 
             $('body').animate({
-                right: "285px"
-            }, 200);
+                right: "25px"
+            }, 0);
         });
 
         // Then push them back */
         $('.fa-times').click(function () {
             $('#contact').animate({
                 right: "-285px"
-            }, 200);
+            }, 0);
 
             $('body').animate({
                 right: "0px"
-            }, 200);
+            }, 20);
         });
 
         $('.social a').click(function () {
@@ -62,6 +62,12 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         scrollBar: true,
         responsiveWidth: 375,
+        scrollingSpeed: 750,
+        animateAnchor: true,
+            touchSensitivity: 5,
+            normalScrollElementTouchThreshold: 5,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
         navigation: true,
         anchors: ['home','feacture','testimony', 'serigrafia','contact', 'connect'] ,
         menu: '#myMenu',
@@ -75,7 +81,7 @@ $(document).ready(function () {
             if (index == 1) {
                 /* add opacity to arrow */
                 $('header img, .social').each(function () {
-                    $(this).removeClass('dark')
+                    $(this).removeClass('dark') 
                 });
                 $('#fp-nav').each(function () {
                     $(this).removeClass('dark')
